@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<p>Tämä on JavaScript-ohjelma!</p>
+<script>
+    const nimi = prompt('Anna nimesi.');
+    document.write('Terve, ' + nimi + '!<br/>');
+
+    let area,r,pi;
+    pi=3.14;
+    r=parseInt(prompt("Anna ympyrän säde."));
+    area=pi*r*r;
+    document.write(" Ympyrän pinta-ala on " + area + "<br/>");
+
+    let piiri,pinta,h,a;
+    h=parseInt(prompt("Anna suorakulmion korkeus."));
+    a=parseInt(prompt("anna suorakulmion kanta."));
+    piiri=h+h+a+a;
+    pinta=a*h;
+    document.write("Suorakulmion pinta-ala on " + pinta + " ja piiri on " + piiri + "<br/>");
+
+    let luku1,luku2,luku3,summa,tulo,keski;
+    luku1=parseInt(prompt("Anna ensimmäinen luku"));
+    luku2=parseInt(prompt("Anna toinen luku"));
+    luku3=parseInt(prompt("Anna kolmas luku"));
+    summa=luku1+luku2+luku3;
+    tulo=luku1*luku2*luku3;
+    keski=summa/3;
+    document.write("Lukujen summa on " + summa + ", lukujen tulo on " + tulo + ", lukujen keskiarvo on " + keski + "<br/>")
+
+    let leivisko,naula,luoti,naula1,luoti1,luoti2,g,g1,g2,g3,g4,kg;
+    leivisko=parseInt(prompt("Anna leivisköjen lukumäärä"));
+    naula=parseInt(prompt("Anna naulojen lukumäärä"));
+    luoti=parseInt(prompt("Anna luotien lukumäärä"));
+    naula1=20*leivisko;
+    luoti1=32*naula1;
+    g1=13.3*luoti1;
+    luoti2=32*naula;
+    g2=13.3*luoti2;
+    g3=13.3*luoti;
+    g4=g1+g2+g3;
+    kg=g4/1000;
+    g=g4%1000;
+    document.write("Massa nykymittojen mukaan: <br/>" + kg.toFixed() + " kilogrammaa ja " + g.toFixed(2) + " grammaa. <br/>")
+
+    let saldo,korko,korko1,saldo1;
+    saldo=parseInt(prompt("Anna tilin saldo"));
+    korko=parseInt(prompt("Anna vuotuinen korko"));
+    korko1=korko/100*saldo;
+    saldo1=saldo+korko1;
+    document.write("Vuodessa kertynyt korko on " + korko1.toFixed(2) + "€ kasvanut saldo on " + saldo1.toFixed(2) + "€ <br/>");
+
+    let noppa1,noppa2,nopat;
+    noppa1=Math.floor((Math.random() *6) +1);
+    noppa2=Math.floor((Math.random() *6) +1);
+    nopat=noppa1+noppa2;
+    document.write("Noppa " + noppa1 + " Noppa " + noppa2 + "<br/> noppien summa " + nopat + "<br/>");
+
+    let k11,k12,k13,k21,k22,k23,k24;
+    k11=Math.floor((Math.random() *9));
+    k12=Math.floor((Math.random() *9));
+    k13=Math.floor((Math.random() *9));
+    k21=Math.floor((Math.random() *6) +1);
+    k22=Math.floor((Math.random() *6) +1);
+    k23=Math.floor((Math.random() *6) +1);
+    k24=Math.floor((Math.random() *6) +1);
+    document.write("numerolukon koodit <br/>" + "i: " + k11 + +k12 + k13 + "<br/>" + "ii: " + k21 + k22 + k23 + k24);
+</script>
+</body>
+</html>
